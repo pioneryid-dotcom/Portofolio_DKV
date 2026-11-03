@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio | Iyan</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #f5f5f5;
+}
+header, section, footer {
+  max-width: 1050px;
+  margin: auto;
+  padding: 28px 22px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+nav a, a { color: inherit; text-decoration: none; }
+nav span { color: #c7fa6b; }
+.hero { padding-top: 85px; padding-bottom: 75px; }
+.tag { color: #c7fa6b; font-size: 13px; }
+h1 { font-size: clamp(42px, 8vw, 76px); margin: 18px 0; }
+h1 span { color: #c7fa6b; }
+p { color: #aaa; line-height: 1.8; }
+h2 { font-size: 28px; margin-bottom: 25px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.project { background: #1d1d1d; padding: 12px; }
+.project img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: #292929;
+  display: block;
+}
+.project h3 { margin-bottom: 5px; }
+.project p { font-size: 14px; margin-top: 5px; }
+.contact {
+  border-top: 1px solid #333;
+  margin-top: 35px;
+}
+.btn {
+  display: inline-block;
+  background: #c7fa6b;
+  color: #111;
+  padding: 13px 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+footer { color: #777; font-size: 13px; }
+@media(max-width:600px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 55px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div style="padding:22px;color:#c7fa6b;font-weight:bold">
+    IYAN<span>®</span>
+  </div>
+  <a href="#karya">Karya ↘</a>
+</nav>
+
+<section class="hero">
+  <div class="tag">PORTOFOLIO DESAIN GRAFIS / 2026</div>
+  <h1>Halo, saya <span>Iyan.</span></h1>
+  <p>
+    Siswa Desain Komunikasi Visual yang tertarik
+    pada desain grafis, poster, dan eksplorasi visual.
+    Saya terus belajar dan mengembangkan kemampuan
+    melalui setiap karya yang saya buat.
+  </p>
+  <a class="btn" href="#karya">Lihat Karya Saya ↘</a>
+</section>
+
+<section id="karya">
+  <div class="tag">KARYA PILIHAN</div>
+  <h2>Beberapa karya saya.</h2>
+  <div class="grid">
+
+    <article class="project">
+      <img src="images/poster-1.jpg" alt="Poster desain pertama">
+      <h3>Poster Eksplorasi</h3>
+      <p>Desain poster · 2026</p>
+    </article>
+
+    <article class="project">
+      <img src="images/poster-2.jpg" alt="Poster desain kedua">
+      <h3>Visual Campaign</h3>
+      <p>Desain kampanye · 2026</p>
+    </article>
+
+    <article class="project">
+      <img src="images/poster-3.jpg" alt="Poster desain ketiga">
+      <h3>Typography Study</h3>
+      <p>Eksplorasi tipografi · 2026</p>
+    </article>
+
+    <article class="project">
+      <img src="images/poster-4.jpg" alt="Poster desain keempat">
+      <h3>Personal Project</h3>
+      <p>Desain grafis · 2026</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="contact">
+  <div class="tag">CONTACT</div>
+  <h2>Mari terhubung.</h2>
+  <p>Saya terbuka untuk kesempatan PKL dan belajar di dunia desain profesional.</p>
+  <a class="btn" href="mailto:emailkamu@example.com">
+    Hubungi Saya ↗
+  </a>
+  <p>Instagram: @usernamekamu</p>
+</section>
+
+<footer>© 2026 Iyan — Portofolio Desain Grafis</footer>
+
+</body>
+</html>
